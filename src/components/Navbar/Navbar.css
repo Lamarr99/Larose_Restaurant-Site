@@ -6,6 +6,9 @@ align-items: center;
 background: var(--color-black);
 color: var(--color-white);
 padding: 1rem 2rem;
+z-index: 500;
+height: min-content;
+border-bottom: 1px groove var(--color-golden);
 }
 
 .app__navbar-logo{
@@ -15,7 +18,7 @@ padding: 1rem 2rem;
 }
 
 .app__navbar-logo img {
-    width: 150px;
+    width: 6.5rem !important;
 }
 
 .app__navbar-links{
@@ -31,6 +34,7 @@ padding: 1rem 2rem;
 .app__navbar-links li{
     margin: 0 1rem ;
     cursor: pointer;
+   
 }
 
 .app__navbar-links li:hover{
@@ -47,6 +51,7 @@ padding: 1rem 2rem;
     margin: 0 1rem;
     text-decoration: none;
     transition: .5s ease;
+    border-bottom: 1px solid transparent;
 }
 
 .app__navbar-login a:hover{
@@ -61,6 +66,12 @@ padding: 1rem 2rem;
 
 .app__navbar-smallscreen {
     display: none;
+  
+}
+.nav__button{
+    color: var(--color-golden);
+    cursor: pointer;
+    transition: .5s ease-in-out;
 }
 
 .app__navbar-smallscreen_overlay {
@@ -112,6 +123,11 @@ padding: 1rem 2rem;
 @media screen and (max-width:1150px) {
     .app__navbar-links{
         display: none;
+    }
+    .app__navbar{
+        position: fixed;
+        top: 0;
+        
     }
     .app__navbar-smallscreen{
         display: flex;

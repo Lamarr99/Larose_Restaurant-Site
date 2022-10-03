@@ -2,80 +2,83 @@ import images from './images';
 
 const wines = [
   {
-    title: 'Chapel Hill Shiraz',
-    price: '$56',
-    tags: 'AU | Bottle',
+    title: 'Carlo Rossi',
+    price: '$10',
+    tags: 'CA | Bottle',
   },
   {
-    title: 'Catena Malbee',
-    price: '$59',
-    tags: 'AU | Bottle',
+    title: 'Cabernet Sauvignon',
+    price: '$60',
+    tags: 'FR | Bottle',
   },
   {
-    title: 'La Vieillw Rose',
-    price: '$44',
-    tags: 'FR | 750 ml',
+    title: 'Merlot & Pinot Noir',
+    price: '$30',
+    tags: 'FR | Bottle',
   },
   {
-    title: 'Rhino Pale Ale',
-    price: '$31',
+    title: 'Zinfandel',
+    price: '$45',
     tags: 'CA | 750 ml',
   },
   {
-    title: 'Irish Guinness',
-    price: '$26',
+    title: 'Guinness Extra Stout',
+    price: '$5',
     tags: 'IE | 750 ml',
   },
 ];
 
 const cocktails = [
   {
-    title: 'Aperol Sprtiz',
-    price: '$20',
-    tags: 'Aperol | Villa Marchesi prosecco | soda | 30 ml',
-  },
-  {
-    title: "Dark 'N' Stormy",
-    price: '$16',
-    tags: 'Dark rum | Ginger beer | Slice of lime',
+    title: 'Negroni',
+    price: '$15',
+    tags: 'Gin | Sweet Vermouth | Campari | Orange garnish',
   },
   {
     title: 'Daiquiri',
     price: '$10',
-    tags: 'Rum | Citrus juice | Sugar',
+    tags: 'Rum | Lime juice | Sugar',
   },
+  {
+    title: "Manhattan",
+    price: '$15',
+    tags: 'Spicy rye | Sweet Vermouth | Angostura Bitters | Cherry Garnish',
+  }, 
   {
     title: 'Old Fashioned',
-    price: '$31',
-    tags: 'Bourbon | Brown sugar | Angostura Bitters',
+    price: '$15',
+    tags: 'Bourbon | Brown sugar | Angostura Bitters | Orange twist',
   },
   {
-    title: 'Negroni',
-    price: '$26',
-    tags: 'Gin | Sweet Vermouth | Campari | Orange garnish',
+    title: 'Aperol Sprtiz',
+    price: '$15',
+    tags: 'Aperol | Villa Marchesi prosecco | soda | 30 ml',
   },
+ 
+
+ 
 ];
 
 const awards = [
   {
     imgUrl: images.award02,
-    title: 'Bib Gourmond',
-    subtitle: 'Lorem ipsum dolor sit amet, consectetur.',
+    title: 'James Beard Foundation Award',
+    subtitle: 'America’s Classics Awards.',
   },
   {
     imgUrl: images.award01,
-    title: 'Rising Star',
-    subtitle: 'Lorem ipsum dolor sit amet, consectetur.',
+    title: 'Star chefs',
+    subtitle: 'Rising star (2019).',
   },
   {
     imgUrl: images.award05,
-    title: 'AA Hospitality',
-    subtitle: 'Lorem ipsum dolor sit amet, consectetur.',
+    title: 'NYSRA Awards',
+    subtitle: 'Best Solo Dining',
   },
   {
     imgUrl: images.award03,
-    title: 'Outstanding Chef',
-    subtitle: 'Lorem ipsum dolor sit amet, consectetur.',
+    title: 'The Torch Award',
+    subtitle: 'outstanding wine program award.',
   },
 ];
 

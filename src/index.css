@@ -1,15 +1,24 @@
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;500;600;700&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;500;600;700&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500;1,600&family=Maven+Pro:wght@400;500&family=Raleway:wght@200;300;400;500&display=swap');
+
 
 :root {
-  --font-base: 'Cormorant Upright', serif;
-  --font-alt: 'Open Sans', sans-serif;
+  --font-base: 'Cormorant Garamond', serif;
+  --font-alt: 'Maven Pro', sans-serif;
+  --font-top: 'Raleway', sans-serif;
   
-  --color-golden: #DCCA87;
-  --color-black: #0C0C0C;
+  --color-golden: #E6D2AA;
+  /* DCCA87; */
+  --color-black: #42032C;
+  /* 110603; */
+  /* #1b1811; */
+  /* #0C0C0C; */
   --color-gray: #545454;
-  --color-crimson: #F5EFDB;
+  --color-beige:  #ddd0c8;
+  --color-darkgrey: #22333b;
+  --color-crimson: #F1EFDC;
   --color-grey: #AAAAAA;
-  --color-white: #FFFFFF;
+  --color-white: #F1EFDC;
 }
 
 * {

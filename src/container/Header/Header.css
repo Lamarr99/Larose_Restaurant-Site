@@ -3,12 +3,15 @@
 }
 
 .app__header-h1{
-    font-family: var(--font-base);
+    font-family: var(--font-base) ;
+    font-weight: 00;
     color: var(--color-golden);
     letter-spacing: 0.04em;
-    text-transform: uppercase;
-    line-height: 117px;
-    font-size: 90px;
+    text-transform: capitalize;
+    line-height: 6rem;
+    font-size: 5rem;
+    word-break: keep-all;
+    
 }
 
 .app__header-img img{

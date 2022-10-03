@@ -7,9 +7,10 @@ const FindUs = () => (
   <div className='app__bg app__wrapper section__padding' id='contact'>
     <div className='app__wrapper_info'>
 <SubHeading title='contact' />
+
 <h1 className='headtext__cormorant' style={{marginBottom:'3rem'}}>Find Us</h1>
 <div className='app__wrapper-content'>
-<p className='p__opensans'>Address Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque dolorem amet minus debitis temporibus deserunt ratione asperiores numquam explicabo, suscipit qui magni tempore natus ut, autem tempora eveniet aperiam labore? </p>
+<p className='p__opensans'>475 Fifth Ave. Brooklyn, NY 11228.</p>
 <p className='p__cormorant' style={{color:'#DCCA87',margin:'2rem 0' }}>Opening Hours</p>
 <p className='p__opensans'> Mon - Fri: 10:00am - 02:00 Am </p>
 <p classNAme='p__opensans'> Sat - sun: 10:00am - 04:00 am </p>

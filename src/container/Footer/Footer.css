@@ -30,7 +30,7 @@
 }
 
 .app__footer-links_logo img:first-child{
-width: 210px;
+width: 8rem;
 margin-bottom: 0.75rem;
 
 }
@@ -46,6 +46,7 @@ margin-bottom: 0.75rem;
     cursor: pointer;
     font-size: 24px;
     margin: 0.5rem;
+    transition: .3s ease-in-out;
 }
 .app__footer-links_icons svg:hover{
     color: var(--color-golden);
@@ -66,11 +67,11 @@ margin-bottom: 0.75rem;
     margin-top: 3rem;
 }
 .footer__copyright small{
-    font-size: 1rem;
-    color: var(--color-golden);
+    font-size: .9rem;
+    color: var(--color-golden) !important;
     letter-spacing: 1px;
-  
-}
+    cursor: pointer;
+ }
 
 @media screen and (min-width: 2000px) {
     .app__footer-headtext{

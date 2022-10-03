@@ -1,51 +1,55 @@
 import React from 'react';
 import { FooterOverlay, Newsletter } from '../../components';
 import {FiFacebook, FiInstagram, FiTwitter } from 'react-icons/fi'
+import { AnimationOnScroll } from 'react-animation-on-scroll';
+import {SubHeading} from '../../components';
 
 import './Footer.css';
 import { images } from '../../constants';
 
 const Footer = () => (
   <div className='app__footer section__padding'>
-   <FooterOverlay />
+   {/* <FooterOverlay /> */}
    < Newsletter  />
 
 <div className='app__footer-links'>
 <div className='app__footer-links_contact'>
-<h1 className='app__footer-headtext'>Contact us</h1>
-<p className='p__opensans'>address</p>
-<p className='p__opensans'>phone number 1</p>
-<p className='p__opensans'>phone number 2</p>
+<h1 className='app__footer-headtext'>The happiest of hours</h1>
+<p className='p__opensans'>Every Tuesday and Thursday between 4.30pm - 6pm.</p><br />
+
+<p className='p__opensans'>5% off any cocktail you buy during this period!</p>
+
 
 
 </div>
 
 <div className='app__footer-links_logo'>
 <img src={images.larose} alt="footer logo" />
-<p className='p__opensans'>The best way to find yourself is to lose ypurself in the service of others</p>
-<img src={images.spoon} alt="sppon" className='spoon__image' style={{marginTop: '15px'}}  />
-
+<SubHeading title='We are the competition' />
 <div className='app__footer-links_icons'>
-<FiFacebook   />
-<FiTwitter  />
-<FiInstagram  />
+  <a href="https://facebook.com"><FiFacebook /></a>
+  <a href="https://twitter.com"><FiTwitter /></a>
+  <a href="https://instagram.com"><FiInstagram /></a>
+
 </div>
 
 </div>
 
 <div className='app__footer-links_work'>
-<h1 className='app__footer-headtext'>Working hours</h1>
-<p className='p__opensans'>Monday-Friday:</p>
-<p className='p__opensans'>08:00 am-12:00am</p>
-<p className='p__opensans'>Saturday-Sunday:</p>
-<p className='p__opensans'>07:00am-11:00pm</p>
+<h1 className='app__footer-headtext'>Live Music</h1>
+<p className='p__opensans'>Live music by Monty Bevins every second Friday of the month!</p><br />
+<p className='p__opensans'>Monty plays R&B tunes from 8.30pm till 10pm. </p>
+
 </div>
 
 </div>
 <div className='footer__copyright'>
-<p style={{fontSize: '1.2rem'}} className='p__cormorant'>2022 LARÓSE. All rights reserved.</p><br />
+<p style={{fontSize: '1.1rem'}} className='p__cormorant'>© 2022 LARÓSE.</p><br />
 
-<small className='p__cormorant flex__center'>Built by Tony Osijo</small>
+
+<small className='p__cormorant flex__center small'><a href=""> Built by Tony Osijo</a></small>
+
+
             
 </div>
   </div>
