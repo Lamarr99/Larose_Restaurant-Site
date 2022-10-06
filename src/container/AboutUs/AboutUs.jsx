@@ -26,9 +26,6 @@ animateIn="animate__fadeInLeft" initiallyVisible='false'>
 
 </p>
  <button type='button' className='custom__button'>Know More</button>
-
-
-
 </div>
 
 <div className='app__aboutus-content_knife flex__center'>

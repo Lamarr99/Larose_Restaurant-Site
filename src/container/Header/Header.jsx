@@ -10,18 +10,13 @@ const Header = () => (
 
   <div className='app__header app__wrapper section__padding' id='home'>
 
-
 <div className='app__wrapper_info'>
-
 <SubHeading  title='Double your pleasure, double your fun.'/>
 
 <AnimationOnScroll animateIn="animate__fadeIn" animateOut='animate__fadeOut'>
- 
-
-
 <h1 className='app__header-h1'>Grande cuisine. just for you</h1>
 <p className='p__opensans' style={{ margin: '2rem 0'  }}>The place to be 
-to have a great time with the people you love.<br />Now, Let’s begin the adventure.</p>
+when you want a great time with the people you love.<br />Now, Let’s begin the adventure.</p>
 <button type='button' className='custom__button '>Explore Menu</button>
 </AnimationOnScroll>
 </div>
