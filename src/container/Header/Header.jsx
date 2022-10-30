@@ -17,7 +17,7 @@ const Header = () => (
 <h1 className='app__header-h1'>Grande cuisine. just for you</h1>
 <p className='p__opensans' style={{ margin: '2rem 0'  }}>The place to be 
 when you want a great time with the people you love.<br />Now, Let’s begin the adventure.</p>
-<button type='button' className='custom__button '>Explore Menu</button>
+<a type='button' href='#menu' className='custom__button '>Explore Menu</a>
 </AnimationOnScroll>
 </div>
 
@@ -25,7 +25,7 @@ when you want a great time with the people you love.<br />Now, Let’s begin the
 <AnimationOnScroll animateIn="animate__fadeIn">
 
 
-<img src={ images.welcome } alt="welcome image" />
+<img src={ images.welcome } alt="welcome image" loading='lazy' />
 </AnimationOnScroll>
 </div>
 

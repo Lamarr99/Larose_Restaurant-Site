@@ -3,18 +3,16 @@ import { GiHamburgerMenu } from 'react-icons/gi'
 import { MdOutlineRestaurantMenu } from 'react-icons/md'
 import images from '../../constants/images'
 
-
 import './Navbar.css';
 
 const Navbar = () => {
 const [toggleMenu, setToggleMenu] = useState(false);
 
-
 return  (
 
   <nav className='app__navbar'>
 <div className='app__navbar-logo'>
-<img src={ images.larose } alt="app logo" />
+<img src={ images.larose } alt="app logo"loading='lazy' />
 </div>
 
 <ul className='app__navbar-links'>
@@ -23,8 +21,8 @@ return  (
 <li className='p__opensans'><a href="#menu">Today's Special</a></li>
 <li className='p__opensans'><a href="#awards">Awards</a></li>
 <li className='p__opensans'><a href="#contact">Contact</a></li>
-
 </ul>
+
 <div className='app__navbar-login'>
 <a href="#menu" className='p__opensans'>Menu</a><div />
 <a href="#contact" className='p__opensans'>Reservations</a>
@@ -33,10 +31,10 @@ return  (
 <GiHamburgerMenu className='nav__button' fontSize={27} onClick={ () => setToggleMenu(true)} />
 {toggleMenu && (
 
-<div className='app__navbar-smallscreen_overlay flex__center slide-bottom'>
-<MdOutlineRestaurantMenu fontSize={27} className='overlay__close' onClick={()=> setToggleMenu(false)} />
+<div className='app__navbar-smallscreen_overlay flex__center slide-bottom' onClick={()=> setToggleMenu(false)} >
+<MdOutlineRestaurantMenu fontSize={27} className='overlay__close' />
 <ul className='app__navbar-smallscreen_links'>
-<li className='p__opensans'><a href="#home">Home</a></li>
+<li className='p__opensans'><a href="#home" >Home</a></li>
 <li className='p__opensans'><a href="#about">About</a></li>
 <li className='p__opensans'><a href="#menu">Today's Special</a></li>
 <li className='p__opensans'><a href="#awards">Awards</a></li>

@@ -5,10 +5,10 @@ import { AnimationOnScroll } from 'react-animation-on-scroll'
 
 import './Laurels.css';
 
-const AwardCard = ( {award: { imgUrl, title, subtitle } } ) =>(
+const AwardCard = ( {award: { imgUrl, title, subtitle } } ) => (
   
 <div className='app__laurels_awards-card'>
-<img src={imgUrl} alt="award" />
+<img src={imgUrl} alt="award" loading='lazy' />
 <AnimationOnScroll  animateIn='animate__fadeIn'>
 
 <div className='app__laurels_awards-card_content'>
@@ -34,7 +34,7 @@ const Laurels = () => (
  </div>
 
  <div className='app__wrapper_img'>
-<img src={images.laurels} alt="laurels" />
+<img src={images.laurels} alt="laurels" loading='lazy'/>
  </div>
   </div>
 );

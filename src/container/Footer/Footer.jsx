@@ -1,7 +1,6 @@
 import React from 'react';
 import { FooterOverlay, Newsletter } from '../../components';
 import {FiFacebook, FiInstagram, FiTwitter } from 'react-icons/fi'
-import { AnimationOnScroll } from 'react-animation-on-scroll';
 import {SubHeading} from '../../components';
 
 import './Footer.css';
@@ -24,7 +23,7 @@ const Footer = () => (
 </div>
 
 <div className='app__footer-links_logo'>
-<img src={images.larose} alt="footer logo" />
+<img src={images.larose} alt="footer logo" loading='lazy' />
 <SubHeading title='We are the competition' />
 <div className='app__footer-links_icons'>
   <a href="https://facebook.com"><FiFacebook /></a>
@@ -44,13 +43,10 @@ const Footer = () => (
 
 </div>
 <div className='footer__copyright'>
-<p style={{fontSize: '1.1rem'}} className='p__cormorant'>© 2022 LARÓSE.</p><br />
 
-
-<small className='p__cormorant flex__center small'><a href=""> Built by Tony Osijo</a></small>
-
-
-            
+<small className='p__cormorant small'>
+  <a href="https://github.com/Lamarr99" target='_blank'> Built by Tony Osijo</a>
+</small>       
 </div>
   </div>
 );
