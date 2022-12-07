@@ -9,9 +9,8 @@
     "build": "vite build"
   },
   "dependencies": {
-    "animate.css": "^4.1.1",
+    "framer-motion": "^7.6.19",
     "react": "^18.2.0",
-    "react-animation-on-scroll": "^5.1.0",
     "react-dom": "^18.2.0",
     "react-icons": "^4.4.0"
   },

@@ -1,5 +1,5 @@
 .section__padding {
-  padding: 4rem 6rem;
+  padding: 3rem 4rem;
 }
 
 .flex__center {
@@ -17,7 +17,7 @@
 }
 p::selection{
   background-color: var(--color-crimson);
-color: var(--color-black);
+  color: var(--color-black);
 }
 .app__wrapper {
   display: flex;
@@ -58,12 +58,12 @@ color: var(--color-black);
 .custom__button {
   background-color: var(--color-golden);
     color: var(--color-black);
-    font-family: var(--font-base);
-    font-weight: 700;
+    font-family: var(--font-alt);
+    font-weight: 500;
     letter-spacing: 0.04em;
     line-height: 2rem;
     font-size: 1rem;
-    padding: 0.5rem 1.5rem;
+    padding: 0.5rem 1rem;
     border-radius: 2rem;
     outline: none;
     cursor: pointer;
@@ -71,8 +71,8 @@ color: var(--color-black);
     transition: .5s ease-in-out;
 }
 .custom__button:hover, .custom__button:focus, .custom__button:active {
-  -webkit-transform: translateY(8px);
-  transform: translateY(8px);
+  -webkit-transform: translateY(.5rem);
+  transform: translateY(.5rem);
 }
 .p__cormorant {
   font-family: var(--font-base);
@@ -81,7 +81,7 @@ color: var(--color-black);
   letter-spacing: 0.04em;
   text-transform: capitalize;
   font-feature-settings: 'tnum' on, 'lnum' on;
-  line-height: 29.9px;
+  line-height: 1.5rem;
   font-size: 1.4rem;
 }
 
@@ -91,14 +91,15 @@ color: var(--color-black);
   font-weight: 400;
   letter-spacing: 0.04em;
   text-transform: capitalize;
-  line-height: 28px;
+  line-height: 1.8rem;
   font-size: 1.1rem;
 }
 
 .headtext__cormorant {
   font-family: var(--font-base);
+  font-weight: 500;
   color: var(--color-golden);
-  font-size: 64px;
+  font-size: 3rem;
   line-height: 83.2px;
   letter-spacing: 0.04em;
   text-transform: capitalize;
@@ -111,13 +112,13 @@ color: var(--color-black);
 @media screen and (min-width: 2000px) {
   .custom__button,
   .p__cormorant {
-    font-size: 37px;
-    line-height: 67px;
+    font-size: 2rem;
+    line-height: 3rem;
   }
 
   .p__opensans {
-    font-size: 30px;
-    line-height: 50px;
+    font-size: 2rem;
+    line-height: 2.8rem;
   }
 
   .headtext__cormorant {
@@ -137,6 +138,7 @@ color: var(--color-black);
 
   .app__wrapper_img {
     margin: 5rem 0 0 0;
+    width: 40vw;
   }
 
   .app__wrapper_img-reverse {
@@ -146,18 +148,27 @@ color: var(--color-black);
   .app__wrapper_img img {
     width: 100%;
   }
+  .app__findus-img {
+    display: none;
+   }
 }
 
 @media screen and (max-width: 850px) {
   .section__padding {
     padding: 4rem;
   }
+  .app__wrapper_img {
+    width: 50vw;
+  }
+  
+   
 }
 
 @media screen and (max-width: 650px) {
   .section__padding {
-    padding: 4rem 2rem;
+    padding: 4rem 1rem;
   }
+ 
   
   .p__cormorant {
     font-size: 21px;
@@ -170,15 +181,18 @@ color: var(--color-black);
 
 @media screen and (max-width: 450px) {
   .p__opensans {
-    font-size: 12px;
+    font-size: 1rem;
+  }
+  .app__wrapper_img {
+    width: 80vw;
   }
 
   .p__cormorant {
-    font-size: 19px;
+    font-size: 1.3rem;
   }
 
   .headtext__cormorant {
-    font-size: 45px;
-    line-height: 70px;
+    font-size: 2rem;
+    line-height: 2.5rem;
   }
 }

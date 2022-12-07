@@ -68,6 +68,7 @@ margin: 0 2rem;
         width: 100%;
     }
     .app__specialMenu-menu_img{
+        display: none;
         margin: 3rem 0;
     }
 }

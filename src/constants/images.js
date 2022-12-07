@@ -1,5 +1,5 @@
 import bg from '../assets/bg.png';
-import chef from '../assets/chef.png';
+import chef from '../assets/chef.webp';
 import L from '../assets/L.png';
 import gallery01 from '../assets/gallery01.png';
 import gallery02 from '../assets/gallery02.png';
@@ -8,13 +8,12 @@ import gallery04 from '../assets/gallery04.png';
 import gallery05 from '../assets/gallery06.png';
 import gallery06 from '../assets/gallery05.png';
 
-import knife from '../assets/knife.png';
+// import knife from '../assets/knife.png';
 import logo from '../assets/logo.png';
-import menu from '../assets/menu.png';
-import overlaybg from '../assets/overlaybg.png';
+import menu from '../assets/menu.webp';
 import spoon from '../assets/spoon.svg';
-import welcome from '../assets/welcome.png';
-import findus from '../assets/findus.png';
+import welcome from '../assets/welcome.webp';
+import findus from '../assets/findus.webp';
 import laurels from '../assets/laurels.png';
 import award01 from '../assets/award01.png';
 import award02 from '../assets/award02.png';
@@ -34,10 +33,9 @@ export default {
   gallery04,
   gallery05,
   gallery06,
-  knife,
+  // knife,
   logo,
   menu,
-  overlaybg,
   spoon,
   welcome,
   findus,

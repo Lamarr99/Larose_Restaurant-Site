@@ -20,7 +20,7 @@ const FindUs = () => (
 <button className='custom__button' style={{marginTop: '2rem'}}>Visit Us</button>
     </div>
 
-    <div className='app__wrapper_img'>
+    <div className='app__wrapper_img app__findus-img'>
 <img src={images.findus} alt="Find Us" loading='lazy' />
     </div>
   </div>

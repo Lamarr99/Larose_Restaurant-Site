@@ -50,7 +50,7 @@ const cocktails = [
     tags: 'Bourbon | Brown sugar | Angostura Bitters | Orange twist',
   },
   {
-    title: 'Aperol Sprtiz',
+    title: 'Aperol Spritz',
     price: '$15',
     tags: 'Aperol | Villa Marchesi prosecco | soda | 30 ml',
   },

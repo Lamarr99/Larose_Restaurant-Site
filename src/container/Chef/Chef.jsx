@@ -1,8 +1,6 @@
 import React from 'react';
 import { images } from '../../constants';
 import { SubHeading } from '../../components';
-import "animate.css/animate.min.css";
-import { AnimationOnScroll } from 'react-animation-on-scroll';
 
 import './Chef.css';
 
@@ -14,8 +12,8 @@ const Chef = () => (
    </div>
    <div className='app__wrapper_info'>
      
-<SubHeading title="Chef's Word" />
-<h1 className='headtext__cormorant'>i always wanted to make something</h1>
+<SubHeading title="Meet the Chef" />
+<h3 className='headtext__cormorant'>i always wanted to make something</h3>
 
 <div className='app__chef-content'>
 <div className='app__chef-content_quote'>

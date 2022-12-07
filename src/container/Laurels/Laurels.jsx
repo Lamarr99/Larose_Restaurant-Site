@@ -1,22 +1,30 @@
 import React from 'react';
 import { SubHeading} from '../../components';
 import { images, data } from '../../constants';
-import { AnimationOnScroll } from 'react-animation-on-scroll'
 
 import './Laurels.css';
 
 const AwardCard = ( {award: { imgUrl, title, subtitle } } ) => (
   
 <div className='app__laurels_awards-card'>
-<img src={imgUrl} alt="award" loading='lazy' />
-<AnimationOnScroll  animateIn='animate__fadeIn'>
+<img src={imgUrl} alt="award" />
+
 
 <div className='app__laurels_awards-card_content'>
-<p className='p__cormorant' style={{color:'#DCCA87'}}>{title}</p>
-<p className='p__cormorant'>{subtitle}</p>
+<h6 className='p__award' 
+   style={{color:'var(--color-grey)',
+   fontFamily: `var(--font-alt)`, fontSize:'1.3rem',
+   fontWeight:'400', marginBottom:'.5rem'}}>
+    {title}
+    </h6>
+<p className='p__cormorant' 
+    style={{color: `var(--color-golden)`,
+    fontFamily: `var(--font-top)`, 
+    fontSize:'1rem',fontWeight:'400'}}>
+  {subtitle}
+  </p>
 
 </div>
-</AnimationOnScroll>
 </div>
 
 )
@@ -33,7 +41,7 @@ const Laurels = () => (
 </div>
  </div>
 
- <div className='app__wrapper_img'>
+ <div className='app__wrapper_img image__laurel'>
 <img src={images.laurels} alt="laurels" loading='lazy'/>
  </div>
   </div>

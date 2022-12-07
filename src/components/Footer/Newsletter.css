@@ -2,11 +2,12 @@
     padding: 2rem 4rem;
     border: 1px solid var(--color-golden);
     background: var(--color-black);
-
 }
 
 .app__newsletter-heading{
     text-align: center;
+    display: grid;
+    place-items: center;
 }
 
 .app__newsletter-input{
@@ -17,15 +18,18 @@
     width: 620px;
     border: 1px solid var(--color-golden);
     font-size: 1.1rem;
-    font-family: var(--font-base);
-    color: var(--color-white);
-outline: none;
+    font-family: var(--font-top);
+    color: var(--color-golden);
+    outline: none;
     margin-right: 2rem;
     padding: 0.75rem 1rem;
     background: var(--color-black);
 
 }
-
+.app__newsletter-input input::placeholder{
+    color: var(--color-grey);
+    font-size: 1rem;
+}
 .app__newsletter-input button{
     width: max-content;
 }

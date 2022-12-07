@@ -1,6 +1,5 @@
 import React from 'react';
 import { images } from '../../constants';
-import { AnimationOnScroll } from 'react-animation-on-scroll';
 
 import './AboutUs.css';
 
@@ -11,12 +10,9 @@ const AboutUs = () => (
 <div className='app__aboutus-content flex__center'>
 
 <div className='app__aboutus-content_about'>
-<h1 className='headtext__cormorant'><AnimationOnScroll  duration='3s' animateOnce='true'  animatePreScroll='false' 
-animateIn="animate__fadeInLeft" initiallyVisible='false'>About Us</AnimationOnScroll></h1>
-<AnimationOnScroll  duration='3s' animateOnce='true'  animatePreScroll='false' 
-animateIn="animate__fadeInLeft" initiallyVisible='false'>
+<h1 className='headtext__cormorant'>About Us</h1>
 <img src={images.spoon} alt="about__spoon" className='spoon__img' loading='lazy' />
-</AnimationOnScroll>
+
 <p className='p__opensans'>Our mission at Larose is to protect and preserve food heritage all over the world.<br /><br />Our menu
  celebrates the farmers and growers we work with. Ingredients are ethically sourced,
  seasonal and availability is often weather dependent. Our cheeses, olive oil, kaimoana, beef, bread, olives,
@@ -32,12 +28,9 @@ animateIn="animate__fadeInLeft" initiallyVisible='false'>
 </div>
 
 <div className='app__aboutus-content_history'>
-<h1 className='headtext__cormorant'><AnimationOnScroll  duration='3s'  animateOnce='true' animateOut='animate__fadeOutRight'  animatePreScroll='false' 
-animateIn="animate__fadeInRight" initiallyVisible='false'>Our History</AnimationOnScroll></h1>
-<AnimationOnScroll  duration='3s'  animatePreScroll='false' 
-animateIn="animate__fadeInRight"  animateOnce='true' initiallyVisible='false'>
+<h1 className='headtext__cormorant'>Our History</h1>
+
 <img src={images.spoon} alt="about__spoon" className='spoon__img' loading='lazy' />
-</AnimationOnScroll>
 
 <p className='p__opensans'>Having moved from the original site in Rochester, Larose
  has been turning out amazing meals from premises just out of Brooklyn since April 2018. <br /><br /> The end of June

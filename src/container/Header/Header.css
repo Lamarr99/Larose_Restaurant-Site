@@ -1,19 +1,44 @@
 .app__header{
     background-color: var(--color-black);
+
 }
 
 .app__header-h1{
-    font-family: var(--font-base) ;
-    font-weight: 00;
+    font-family: var(--font-top) ;
+    font-weight: 500;
     color: var(--color-golden);
     letter-spacing: 0.04em;
     text-transform: capitalize;
-    line-height: 6rem;
-    font-size: 5rem;
+    line-height: 5rem;
+    font-size: 4rem;
     word-break: keep-all;
     
 }
 
 .app__header-img img{
-    width: 80%;
+    width: 100%;
+}
+
+@media screen and (max-width: 850px) {
+    .app__header-img {
+        display: none;
+    }
+    
+}
+
+@media screen and (max-width: 450px) {
+    .app__header-h1 {
+        font-size: 2.5rem;
+        font-weight: 500;
+        line-height: 3rem;
+    }
+    
+}
+@media screen and (max-width: 350px) {
+    
+
+    .app__header-text {
+        font-size: .5rem !important;
+        color: black !important;
+    }
 }

@@ -1,16 +1,15 @@
 import React from 'react';
-import { FooterOverlay, Newsletter } from '../../components';
+import {  Newsletter } from '../../components';
 import {FiFacebook, FiInstagram, FiTwitter } from 'react-icons/fi'
-import {SubHeading} from '../../components';
+import { SubHeading } from '../../components';
+import Dining from '../../../public/dining.png'
 
 import './Footer.css';
 import { images } from '../../constants';
 
 const Footer = () => (
   <div className='app__footer section__padding'>
-   {/* <FooterOverlay /> */}
    < Newsletter  />
-
 <div className='app__footer-links'>
 <div className='app__footer-links_contact'>
 <h1 className='app__footer-headtext'>The happiest of hours</h1>
@@ -23,7 +22,10 @@ const Footer = () => (
 </div>
 
 <div className='app__footer-links_logo'>
-<img src={images.larose} alt="footer logo" loading='lazy' />
+  <div className='footer__flex'>
+<img width={50} height={50} src={Dining} alt="footer logo" />{'  '}
+<h1 className='app__footer-headtext1'> Larose</h1>
+</div>
 <SubHeading title='We are the competition' />
 <div className='app__footer-links_icons'>
   <a href="https://facebook.com"><FiFacebook /></a>
@@ -45,7 +47,7 @@ const Footer = () => (
 <div className='footer__copyright'>
 
 <small className='p__cormorant small'>
-  <a href="https://github.com/Lamarr99" target='_blank'> Built by Tony Osijo</a>
+  <a href="https://github.com/Lamarr99" target='_blank' rel='noreferrer'> Built by Tony Osijo</a>
 </small>       
 </div>
   </div>
