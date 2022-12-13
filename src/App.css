@@ -15,7 +15,7 @@
   background-repeat: repeat;
   background-attachment: fixed;
 }
-p::selection{
+::selection{
   background-color: var(--color-crimson);
   color: var(--color-black);
 }
@@ -64,7 +64,7 @@ p::selection{
     line-height: 2rem;
     font-size: 1rem;
     padding: 0.5rem 1rem;
-    border-radius: 2rem;
+    border-radius: .25rem;
     outline: none;
     cursor: pointer;
     border: 1px transparent solid ;
@@ -92,7 +92,7 @@ p::selection{
   letter-spacing: 0.04em;
   text-transform: capitalize;
   line-height: 1.8rem;
-  font-size: 1.1rem;
+  font-size: 1rem;
 }
 
 .headtext__cormorant {
@@ -107,6 +107,17 @@ p::selection{
 
 .spoon__img {
   width: 45px;
+}
+
+.app__footer-headtext1{
+  font-family: var(--font-top);
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  font-size: 1.4rem;
+  line-height: 2rem;
+  color: var(--color-crimson);
+  
 }
 
 @media screen and (min-width: 2000px) {

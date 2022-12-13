@@ -3,7 +3,7 @@ import { GiHamburgerMenu } from 'react-icons/gi'
 import { MdOutlineRestaurantMenu } from 'react-icons/md'
 import images from '../../constants/images'
 import { staggerContainer, navVariants } from '../../constants/motion';
-import {motion} from 'framer-motion'
+import {motion} from 'framer-motion';
 
 import './Navbar.css';
 
@@ -18,9 +18,10 @@ return  (
   initial='hidden'
   whileInView="show"
   viewport={{once: false, amount: 0.25}}>
-    <div className='app__navbar-logo'>
-      <img src={ images.larose } alt="app logo"loading='lazy' />
-    </div>
+    <motion.div variants={navVariants} className='app__navbar-logo'>
+      <img src={ images.larose } alt="Larose" width={40} height={40}/>
+      <h1 className='app__footer-headtext1'> Larose</h1>
+    </motion.div>
 
     <motion.ul 
       className='app__navbar-links'
@@ -32,10 +33,10 @@ return  (
         <li className='p__opensans'><a href="#contact">Contact</a></li>
     </motion.ul>
 
-    <div className='app__navbar-login'>
+    <motion.div variants={navVariants} className='app__navbar-login'>
         <a href="#menu" className='p__opensans'>Menu</a><div />
         <a href="#contact" className='p__opensans'>Reservations</a>
-    </div>
+    </motion.div>
     <div className='app__navbar-smallscreen'>
         <GiHamburgerMenu className='nav__button' fontSize={27} onClick={ () => setToggleMenu(true)} />
         {toggleMenu && (

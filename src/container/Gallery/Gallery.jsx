@@ -2,6 +2,8 @@ import React from 'react';
 import { SubHeading } from '../../components';
 import { images} from '../../constants';
 import { BsInstagram, BsArrowLeftShort, BsArrowRightShort } from 'react-icons/bs';
+import {motion} from 'framer-motion'
+import { staggerContainer,fadeIn } from '../../constants/motion';
 
 import './Gallery.css';
 
@@ -22,18 +24,23 @@ const Gallery = () => {
   }
 
   return(
-  <div className='app__gallery flex__center'>
-    <div className='app__gallery-content'>
+  <motion.div 
+      variants={staggerContainer}
+      initial='hidden'
+      whileInView="show"
+      viewport = {{ once: false, amount: 0.25 }} className='app__gallery flex__center'>
+    <motion.div
+     className='app__gallery-content'>
   
   <SubHeading title='Instagram' />
 
-<h1 className='headtext__cormorant'>Photo Gallery</h1>
-<p className='p__opensans' style={{color: '#AAA', marginTop:'2rem'}}>Too good to pass up, right? </p>
- <button type='button' className='custom__button'>View More</button>
+<motion.h1 variants={fadeIn('up', 'tween', 0.2, 1)} className='headtext__cormorant'>Photo Gallery</motion.h1>
+<motion.p variants={fadeIn('up', 'tween', 0.3, 1)} className='p__opensans' style={{color: '#AAA', marginTop:'2rem'}}>Too good to pass up, right? </motion.p>
+ <motion.button variants={fadeIn('up', 'tween', 0.4, 1)} type='button' className='custom__button'>View More</motion.button>
  
-  </div>
+  </motion.div>
 
-<div className='app__gallery-images'>
+<motion.div variants={fadeIn('up', 'tween', 0.2, 1)} className='app__gallery-images'>
 <div className='app__gallery-images_container' ref={scrollRef}>
 
 {galleryImages.map((image, index) => (
@@ -53,10 +60,10 @@ const Gallery = () => {
 
 </div>
 
-</div>
+</motion.div>
 
 
-  </div>
+  </motion.div>
 );
   }
 export default Gallery;
