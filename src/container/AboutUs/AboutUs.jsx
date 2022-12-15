@@ -17,23 +17,21 @@ const AboutUs = () => (
     >
     
 
-<div className='app__aboutus-content flex__center'>
+      <div className='app__aboutus-content flex__center'>
 
-<div className='app__aboutus-content_about'>
-<motion.h1 variants={fadeIn('up', 'tween', 0.1, 1)} className='headtext__cormorant'>About Us</motion.h1>
-<motion.img variants={fadeIn('up', 'tween', 0.1, 1)} src={images.spoon} alt="about__spoon" className='spoon__img' loading='lazy' />
+        <div className='app__aboutus-content_about'>
+          <motion.h1 variants={fadeIn('up', 'tween', 0.1, 1)} className='headtext__cormorant'>About Us</motion.h1>
+          <motion.img variants={fadeIn('up', 'tween', 0.1, 1)} src={images.spoon} alt="about__spoon" className='spoon__img' loading='lazy' />
 
-<motion.p variants={fadeIn('up', 'tween', 0.3, 1)} className='p__opensans'>Our mission at Larose is to protect and preserve food heritage all over the world.<br /><br />Our menu
- celebrates the farmers and growers we work with. Ingredients are ethically sourced,
- seasonal and availability is often weather dependent. Our cheeses, olive oil, kaimoana, beef, bread, olives,
-  fruit and vegetables are largely sourced from the Mahurangi region.
-
-</motion.p>
- <motion.button variants={fadeIn('up', 'tween', 0.4, 1)} type='button' className='custom__button'>Know More</motion.button>
-</div>
+          <motion.p variants={fadeIn('up', 'tween', 0.3, 1)} className='p__opensans'>Our mission at Larose is to protect and preserve food heritage all over the world.<br /><br />Our menu
+          celebrates the farmers and growers we work with. Ingredients are ethically sourced,
+          seasonal and availability is often weather dependent. Our cheeses, olive oil, kaimoana, beef, bread, olives,
+          fruit and vegetables are largely sourced from the Mahurangi region.
+          </motion.p>
+         <motion.button variants={fadeIn('up', 'tween', 0.4, 1)} type='button' className='custom__button'>Know More</motion.button>
+       </div>
 
 <div className='app__aboutus-content_knife flex__center'>
-{/* <img src={images.knife} alt="about__knife" className='knife__img' /> */}
 <hr style={{ transform:'rotate(180deg)', width:'1px', height:'100vh',  }}  className='app__aboutus-content_knife'/>
 </div>
 
