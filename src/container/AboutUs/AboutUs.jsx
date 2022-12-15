@@ -43,7 +43,7 @@ const AboutUs = () => (
 <motion.p variants={fadeIn('up', 'tween', 0.3, 1)} className='p__opensans'>Having moved from the original site in Rochester, Larose
  has been turning out amazing meals from premises just out of Brooklyn since April 2018. <br /><br /> The end of June
  2018 we opened the doors to visitors and locals to experience the kind of service 
-we're all about ;<br />great tastes and your satisfaction.</motion.p><br />
+  we're all about ;<br />great tastes and your satisfaction.</motion.p><br />
 <motion.button variants={fadeIn('up', 'tween', 0.4, 1)} type='button' className='custom__button'>Know More</motion.button>
 
 </div>
